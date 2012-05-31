@@ -1,0 +1,15 @@
+2012-05-31 13:04:32,982 [10] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT this_.Id as Id11_0_, this_.SerialNumber as SerialNu2_11_0_ FROM Settings_ShellDescriptorRecord this_ WHERE 1=1
+System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-05-31 13:04:33,007 [10] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-05-31 13:04:33,017 [10] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-05-31 13:19:05,792 [17] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - NullReferenceException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null]]
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Contoso.ShapeProviders.ContentShapeProvider.<Discover>b__3(ShapeDisplayingContext displaying)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__3(Action`1 action) in d:\Builds\OrchardFull\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 68
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19

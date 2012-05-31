@@ -1,0 +1,13 @@
+﻿<Placement>
+  <Place Fields_Contrib_Image_Edit="Content:2.5"/>
+
+  <Match DisplayType="SummaryAdmin">
+    <Place Fields_Contrib_Image="-"/>
+  </Match>
+
+  <Match DisplayType="Summary">
+    <Place Fields_Contrib_Image="-"/>
+  </Match>
+
+  <Place Fields_Contrib_Image="Content:before"/>
+</Placement>

@@ -1,0 +1,14 @@
+﻿Name: Image Field
+AntiForgery: enabled
+Author: Sébastien Ros
+Website: http://orchardimagefield.codeplex.com
+Version: 1.1.3
+OrchardVersion: 1.1
+Tags: image, field, media, thumbnail
+Description: The Image Field module introduces a new field with Image upload functionalities.
+Features:
+    Contrib.ImageField:
+        Name: Image Field
+        Description: The image field.
+        Category: Fields
+        Dependencies: Orchard.jQuery, Orchard.Media

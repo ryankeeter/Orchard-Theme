@@ -1,0 +1,13 @@
+﻿html.dyn label.forpicker {
+    display:none;
+}
+html.dyn input.hinted {
+    color:#ccc;
+    font-style:italic;
+}
+.date input{
+    width:10em;
+}
+.time input {
+    width:6em;
+}

@@ -1,0 +1,7 @@
+﻿Name: Fizz
+Author: NimblePros
+Description: Fizz is a simple, bubbly theme perfect for a personal site or blog. 
+Version: 1.0.1
+Tags: Awesome, blue, two-column, one-column, blog, personal, simple, light, white space
+Website: http://nimblepros.com
+Zones: Header, Navigation, Featured, Aside, Messages, BeforeContent, Content, AfterContent, AfterMain, AfterMainColumnFirst, AfterMainColumnSecond, Footer

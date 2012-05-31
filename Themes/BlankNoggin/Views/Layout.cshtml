@@ -1,0 +1,35 @@
+﻿@{
+	Script.Require("ShapesBase");
+	Style.Include("site.css");
+	Style.Include("http://fonts.googleapis.com/css?family=Lobster&subset=latin");
+}
+<div id="page" class="outline">
+	<span class="label"><strong>Layout.cshtml</strong> &ndash; The main template that controlls where all the zones are shown.</span>
+	<header id="banner">
+		<h1>@WorkContext.CurrentSite.SiteName</h1>
+		<nav>
+			@Display(Model.Navigation)
+		</nav>
+	</header>
+	
+  <section id="main"@if(Model.AsideFirst == null){ <text>class="full"</text>}>
+		<article>
+			@if (Model.Messages != null) {
+			<div id="messages">
+				@Display(Model.Messages)
+			</div>
+			}
+	        @Display(Model.RecentPosts)
+		</article>
+	</section>
+	
+	@if (Model.AsideFirst != null) { 
+	<aside>
+		@Display(Model.AsideFirst)
+	</aside> }
+	
+</div>
+<footer id="f1">
+	
+</footer>
+<div id="bottom">&nbsp;</div>

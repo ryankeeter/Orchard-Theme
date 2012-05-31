@@ -1,0 +1,7 @@
+Name: Blank theme for learning
+Author: Richard Garside - Noggin Box
+Website: http://www.nogginbox.co.uk
+Description: A blank 2 column theme with guides to help you work out what files control what. It's a training theme to help you build you own.
+Version: 1.1
+Tags: NogginBox, blank, 2-column, training
+Zones: BeforeContent, Content, RecentPosts, AfterContent, AsideFirst

@@ -1,0 +1,17 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+	Layout.Title = Model.Title;
+	var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
+}
+<article id="standfirst" class="content-item @contentTypeClassName outline">
+	<span class="label"><strong>Content-11.cshtml</strong> &ndash; This file contains the layout for the content item with the ID 11.</span>
+	<header>
+		@Display(Model.Header)
+	</header>
+	@Display(Model.Content)
+	@if(Model.Footer != null) {
+	<footer>
+		@Display(Model.Footer)
+	</footer>
+	}
+</article>

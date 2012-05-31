@@ -1,0 +1,30 @@
+<Placement>
+  
+  <Match ContentType="BlogPost">
+    <Place Parts_Tags_ShowTags="Content:9" />
+    <Place Fields_Contrib_Image="Content" />
+  </Match>
+
+  <Match ContentType="Page">
+    <Place Parts_Common_Metadata="-" />    
+  </Match>
+
+  <Match ContentType="searchResults">
+    <Place Parts_Common_Metadata="-" />
+    <Place Parts_Tags_ShowTags="-" />
+  </Match>
+
+   <Match Path="~/">
+    <Match ContentType="Blog">
+      <Place Parts_Title="-" />
+      <Place Parts_Common_Metadata="-" />
+      <Place Parts_Blogs_Blog_Description="-" />
+    </Match>
+
+    <Match ContentType="BlogPost">
+      <Place Parts_Tags_ShowTags="-" />
+      <Place Fields_Contrib_Image="Content" />
+    </Match>
+  </Match>
+  
+</Placement>

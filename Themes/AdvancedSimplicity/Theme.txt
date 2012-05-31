@@ -1,0 +1,7 @@
+Name: AdvancedSimplicity
+Author: Lucas Moffitt
+Website: http://www.lucasmoffitt.com
+Description: Lucas Moffitt
+Version: 1.0
+Tags: LucasMoffitt, CSS-Grid
+Zones: Header, Search, Navigation, Featured, BeforeMain, AsideFirst, Messages, BeforeContent, Content, AfterContent, AsideSecond, AfterMain, TripelFirst, TripelSecond, TripelThird, Footer, User

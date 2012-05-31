@@ -1,0 +1,71 @@
+/* Smaller screens */
+@media only screen and (max-width: 1023px) 
+{
+	
+	body 
+	{
+	font-size: 0.9em;
+	}
+	
+}
+
+/* Mobile */
+@media handheld, only screen and (max-width: 767px) 
+{
+
+	body 
+	{
+	font-size: 0.7em;
+	-webkit-text-size-adjust: none;
+	}
+	
+	/* Hide these */
+	#aside-second, #tripel-first, #tripel-second, .contentbanner, #search
+	{
+		display: none;
+	}
+	
+	.row, body, .container {
+	width: 100%;
+	min-width: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+	
+	.row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+	
+	.tweet-bottom
+	{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 40px;   
+	}
+	
+	nav ul a 
+	{
+		line-height: 40px;
+		height: 40px;
+		width: 75%;
+	}
+	
+	nav ul li
+	{
+		height: 40px;
+	}
+
+	#layout-header > #header h2
+	{
+		margin-left: 0px;
+	}	    
+		
+}

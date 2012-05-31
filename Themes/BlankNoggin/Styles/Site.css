@@ -1,0 +1,149 @@
+﻿span.label {
+	display: block;
+	width: 80%;
+	background-color: #fff8e4;
+}
+span.label, .outline {
+	border: 1px dashed #222;
+	padding: 4px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+article, aside, footer, header, hgroup, nav, section, time { display: block; }
+
+p, h2, h3, h4, h5, h6, ul, fieldset { margin-bottom: 15px; }
+header { margin-bottom: 20px; }
+ul, ol { margin-left: 1.5em; }
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+
+#page {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: auto;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+header nav {
+	font-weight: bold;
+	background-color: #000;
+	overflow: auto;
+}
+
+header nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+header nav li {
+	float: left;
+	
+}
+
+header nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	background-color: #000;
+	display: block;
+	width: auto;
+}
+
+section#main {
+	width: 556px;
+	float: left;
+	padding: 40px 40px 50px 50px;
+}
+section#main.full {
+	width: 906px;
+}
+
+#standfirst { margin-bottom: 50px; }
+
+aside {
+	width: 290px;
+	padding: 40px 30px 20px 30px;
+	float: right;
+}
+*:first-child+html aside {float: left; }
+
+footer#f1 {
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+	clear: both;
+	padding: 10px 0;
+	width: 1002px;
+	margin: 0 auto;
+}
+
+
+/* Form style */
+
+legend { padding: 5px; }
+fieldset { padding: 15px; border: 1px dashed #000; }
+fieldset ol { list-style: none; }
+fieldset li { margin-bottom: 1em;}
+input, button { padding: 0.3em; }
+
+textarea,
+.comment-form input[type="text"] {
+  width: 32em;
+  display: block;
+}
+
+label {
+	display: block;
+	font-weight: normal;
+	padding: 0 0 0.3em;
+}
+
+/* Comments */
+
+#comments {
+	clear: both;
+}
+ul.comments 
+{
+	list-style: none;
+	margin-left: 0;
+}
+article.comment 
+{
+	border: 1px dashed #000;
+	padding: 5px 20px 10px 20px;
+}
+
+/* Pager */
+ul.pager 
+{
+	list-style: none;
+	margin: 50px 0 0 0;
+}
+ul.pager a
+{
+	padding: 0.5em;
+}
+li.page-next { float: left; }
+li.page-previous { float: right; }
+
+/* Content lists */
+ul.content-items {
+	list-style: none;
+	margin-left: 0;
+}
+
+/* Tags */
+p.tags { font-size:0.9em; text-align: right; }
+p.tags span { font-weight: bold; }
+p.tags a { color: #555; font-style: italic; }
+
+span.commentcount { display: block; text-align: right; }

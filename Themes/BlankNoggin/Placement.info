@@ -1,0 +1,9 @@
+﻿<Placement>
+	<Match DisplayType="Detail">
+		<Place Parts_Tags_ShowTags="Footer:1"/>
+	</Match>
+	<Match DisplayType="Summary">
+		<Place Parts_Tags_ShowTags="Footer:4"/>
+		<Place Parts_Comments_Count="Footer:5" />
+	</Match>
+</Placement>

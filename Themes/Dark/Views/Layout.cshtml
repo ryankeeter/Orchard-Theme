@@ -1,0 +1,151 @@
+@functions {
+    // To support the layout classifaction below. Implementing as a razor function because we can, could otherwise be a Func<string[], string, string> in the code block following.
+    string CalcuClassify(string[] zoneNames, string classNamePrefix) {
+        var zoneCounter = 0;
+        var zoneNumsFilled = string.Join("", zoneNames.Select(zoneName => { ++zoneCounter; return Model[zoneName] != null ? zoneCounter.ToString() : "";}).ToArray());
+        return HasText(zoneNumsFilled) ? classNamePrefix + zoneNumsFilled : "";
+    }
+}
+@{
+    /* Global includes for the theme
+    ***************************************************************/
+
+    Style.Include("site.css");
+
+    /* Some useful shortcuts or settings
+    ***************************************************************/
+
+    Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
+
+	
+    /* Last bit of code to prep the layout wrapper
+    ***************************************************************/
+    
+    Model.Id = "layout-wrapper";
+    var tag = Tag(Model, "div"); // using Tag so the layout div gets the classes, id and other attributes added to the Model
+}<script type="text/javascript">
+  if(typeof jQuery == 'undefined') {
+    document.write("<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'><"+"/script>");
+  }
+</script>
+
+<!--Apply class to body with browser version-->
+<script type="text/javascript">
+	var nVer = navigator.appVersion; var nAgt = navigator.userAgent; var bN = navigator.appName; var fullV = "" + parseFloat(navigator.appVersion); var majorV = parseInt(navigator.appVersion, 10); var nameOffset, verOffset, ix; if ((verOffset = nAgt.indexOf("Opera")) !== -1) { bN = "Opera"; fullV = nAgt.substring(verOffset + 6); if ((verOffset = nAgt.indexOf("Version")) !== -1) { fullV = nAgt.substring(verOffset + 8) } } else { if ((verOffset = nAgt.indexOf("MSIE")) !== -1) { bN = "IE"; fullV = nAgt.substring(verOffset + 5) } else { if ((verOffset = nAgt.indexOf("Chrome")) !== -1) { bN = "Chrome"; fullV = nAgt.substring(verOffset + 7) } else { if ((verOffset = nAgt.indexOf("Safari")) !== -1) { bN = "Safari"; fullV = nAgt.substring(verOffset + 7); if ((verOffset = nAgt.indexOf("Version")) !== -1) { fullV = nAgt.substring(verOffset + 8) } } else { if ((verOffset = nAgt.indexOf("Firefox")) !== -1) { bN = "Firefox"; fullV = nAgt.substring(verOffset + 8) } else { if ((nameOffset = nAgt.lastIndexOf(" ") + 1) < (verOffset = nAgt.lastIndexOf("/"))) { bN = nAgt.substring(nameOffset, verOffset); fullV = nAgt.substring(verOffset + 1); if (bN.toLowerCase() == bN.toUpperCase()) { bN = navigator.appName } } } } } } } if ((ix = fullV.indexOf(";")) !== -1) { fullV = fullV.substring(0, ix) } if ((ix = fullV.indexOf(" ")) !== -1) { fullV = fullV.substring(0, ix) } majorV = parseInt("" + fullV, 10); if (isNaN(majorV)) { fullV = "" + parseFloat(navigator.appVersion); majorV = parseInt(navigator.appVersion, 10) } 
+	document.getElementsByTagName("body")[0].className += " " +  bN + majorV + " cmsORX cmsORX1";
+</script>
+
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="@Href("~/Themes/Dark/Styles/css/ie7.css")" type="text/css"/>
+<![endif]-->
+
+<div id="BgLayer1"><div id="BgLayer2"><div id="BgLayer3"><div id="Wrapper">
+	<div id="HeaderAreaShadow">
+		<div class="PageWidth">
+			<div id="Language"></div>
+			<div id="User"><span class="icon">&gt;</span> </div>
+			<div id="Login"><span class="icon">&gt;</span> <div class="user-display">
+    @if (Request.IsAuthenticated) {
+            <span class="welcome">@if(WorkContext.CurrentUser != null){@T("Welcome, <strong>{0}</strong>!", WorkContext.CurrentUser.UserName)}</span>
+            <span class="user-actions">
+                @Html.ActionLink(T("Sign Out").ToString(), "LogOff", new { Controller = "Account", Area = "Orchard.Users", ReturnUrl = Context.Request.RawUrl })
+                @Html.ActionLink("Dashboard", "Index", new { Area = "Dashboard", Controller = "Admin" })
+            </span>
+    } else {
+            <span class="user-actions">@Html.ActionLink(T("Sign In").ToString(), "LogOn", new { Controller = "Account", Area = "Orchard.Users", ReturnUrl = Context.Request.RawUrl })</span>
+    }
+</div></div>
+		</div>
+	</div>
+	<div id="OuterInner" class="PageWidth">
+		<div id="HeaderArea">
+			<div id="Logo"><h1><a href="/" title="Go to Home">@WorkContext.CurrentSite.SiteName</a></h1></div>
+			<div id="NavAux">
+				<div id="Date"></div>
+	            <div id="Cart"></div>
+				<div id="Search"><div id="SearchBar">@using (Html.BeginForm("index", "search", new { area = "Orchard.Search" }, FormMethod.Get, new { @class = "search-form" })){<fieldset><input type="text" value="" name="q" id="q"><button type="submit"><img src='images/dummy.gif' width='1' height='1' alt='dummy'/></button></fieldset>}</div></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div id="MenuH" class="MenuH01">@if (Model.Navigation != null) {@Display(Model.Navigation)}</div>
+
+		<div id="ContentArea">
+			<div id="ContentAreaWrapper"><div id="MainContentArea">
+					<div class="zonegroup">
+		@if (Model.BeforeMain != null){<div id="BeforeMain" class="pane w100">@Display(Model.BeforeMain)</div>}
+	</div>
+	<div class="zonegroup">
+		@if (Model.BeforeContent != null){<div id="BeforeContent" class="pane w60"><div class="C00_CleanWPadding container">@Display(Model.BeforeContent)</div></div>}
+		@if (Model.AsideFirst != null){<div id="AsideFirst" class="pane w40"><div class="C01 container">@Display(Model.AsideFirst)</div></div>}
+	</div>
+	<div class="zonegroup">
+		
+		
+	</div>
+	<div class="zonegroup">
+		
+		
+	</div>
+	<div class="zonegroup">
+		@if (Model.Content != null){<div id="Content" class="pane w100"><div class="C00_CleanWPadding container">@Display(Model.Content)</div></div>}
+	</div>
+	<div class="zonegroup">
+		@if (Model.AsideSecond != null){<div id="AsideSecond" class="pane w40"><div class="C03 container">@Display(Model.AsideSecond)</div></div>}
+		@if (Model.AfterContent != null){<div id="AfterContent" class="pane w60"><div class="C00_CleanWPadding container">@Display(Model.AfterContent)</div></div>}
+	</div>
+	<div class="zonegroup">
+		
+		
+	</div>
+	<div class="zonegroup">
+		@if (Model.TripelFirst != null){<div id="TripelFirst" class="pane w30"><div class="C01 container">@Display(Model.TripelFirst)</div></div>}
+		@if (Model.TripelSecond != null){<div id="TripelSecond" class="pane w40"><div class="C00_CleanWPadding container">@Display(Model.TripelSecond)</div></div>}
+		@if (Model.TripelThird != null){<div id="TripelThird" class="pane w30"><div class="C02 container">@Display(Model.TripelThird)</div></div>}
+	</div>
+	<div class="zonegroup">
+		@if (Model.AfterMain != null){<div id="AfterMain" class="pane w100"><div class="C00_CleanWPadding container">@Display(Model.AfterMain)</div></div>}
+	</div>
+	<div class="zonegroup">
+		
+		
+		
+	</div>
+	<div class="clear"></div>
+			</div></div>
+			<div id="SideBar" class="MenuVWidth"><div id="SideBarPadding">
+				<div id="MenuV" class="MenuV01">@if (Model.Navigation != null) {@Display(Model.Navigation)}</div>
+				
+			</div></div>
+		</div>
+        
+        <div id="Breadcrumb"></div>
+
+        <div id="FooterContentArea">
+	        <div id="FooterM">
+	        	<div id="FooterR">
+	        		<div id="FooterL">
+						<div class="zonegroup">
+							@if (Model.FooterQuadFirst != null){<div id="FooterQuadFirst" class="pane w25"><div class="C00_Clean container">@Display(Model.FooterQuadFirst)</div></div>}
+							@if (Model.FooterQuadSecond != null){<div id="FooterQuadSecond" class="pane w25"><div class="C00_Clean container">@Display(Model.FooterQuadSecond)</div></div>}
+							@if (Model.FooterQuadThird != null){<div id="FooterQuadThird" class="pane w25"><div class="C00_Clean container">@Display(Model.FooterQuadThird)</div></div>}
+							@if (Model.FooterQuadFourth != null){<div id="FooterQuadFourth" class="pane w25"><div class="C00_Clean container">@Display(Model.FooterQuadFourth)</div></div>}
+						</div>
+						<div class="clear"></div>
+	        		</div>
+	        	</div>
+	        </div>
+        </div>
+
+        <div id="Footer">
+	        <span id="Copyright"><span class="Copyright">&copy; 2011 @WorkContext.CurrentSite.SiteName. All rights reserved.</span></span>
+			<span id="Sitemap"></span>
+			<span id="Privacy"></span>
+	        <span id="Terms"></span>
+        </div>
+        
+    </div>
+</div></div></div></div>
+
+<!-- powered by Bind Theme Generator ** BIND 2011 ** www.bind.pt -->
+

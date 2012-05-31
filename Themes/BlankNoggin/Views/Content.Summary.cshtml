@@ -1,0 +1,21 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+	var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
+}
+<article class="content-item @contentTypeClassName outline">
+	<span class="label"><strong>Content.Summary.cshtml (content type classname of @contentTypeClassName</strong> &ndash; The template for the summary view of a content item.</span>
+	<header>
+		@Display(Model.Header)
+		@if (Model.Meta != null) {
+		<div class="metadata">
+			@Display(Model.Meta)
+		</div>
+		}
+	</header>
+	@Display(Model.Content)
+	@if(Model.Footer != null) {
+	<footer>
+		@Display(Model.Footer)
+	</footer>
+	}
+</article>
