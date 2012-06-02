@@ -3,7 +3,7 @@
 
 @{
   IEnumerable<object> blogPosts = Model.ContentItems.ContentItems;
-  var posts = blogPosts.ToList();
+  var posts = blogPosts.ToList<dynamic>();
 }
 @if (blogPosts == null || blogPosts.Count() < 1)
 {
@@ -11,28 +11,31 @@
 }
 else
 {
-   <div class="content-items">
-   @for(var i=0; i < posts.Count; i++)
-   {
-            dynamic post = posts[i];
-            string title = post.Title;
-            ContentItem item = post.ContentItem;
-            var part = ((IContent)post.ContentItem).As<BlogPostPart>();
-            dynamic images = post.ContentItem.PostImages;
-            string image = (string)images.FeaturedImage.FileName;
-            
-   <h1>@i</h1>
-   <div class="blogpost" style="width: 300px; padding-left: 15px; float: left; background: url(@images.FeaturedImage.FileName) no-repeat;">
-         <p class="content-item-summary">@Html.Raw(part.Text)</p>
+    <div id="leftAside" class="span-6">
+        <div id="categories-link">
+            <a href="/categories" id="categories-anchor-tag"></a>
+        </div>
+        <div id="favorites-link">
+            <a href="/favorites" id="favorites-anchor-tag"></a>
+        </div>
+    </div>
+   
+    <div id="firstPost" class="span-18 last" style="background-image: url(@posts[0].ContentItem.PostImages.FeaturedImage.FileName.ToString().Remove(0,1));"></div>
+    <div id="secondPost" class="span-12" style="background-image: url(@posts[1].ContentItem.PostImages.SecondaryImage.FileName.ToString().Remove(0,1));"></div>
+    <div id="quadRight"  class="span-12 last">
+        <div id="quad1" class="span-6" style="background-image: url(@posts[2].ContentItem.PostImages.QuadImage.FileName.ToString().Remove(0,1));"></div>
+        <div id="quad2" class="span-6 last" style="background-image: url(@posts[3].ContentItem.PostImages.QuadImage.FileName.ToString().Remove(0,1));"></div>
+        <div id="quad3" class="span-6" style="background-image: url(@posts[4].ContentItem.PostImages.QuadImage.FileName.ToString().Remove(0,1));"></div>
+        <div id="quad4" class="span-6 last" style="background-image: url(@posts[5].ContentItem.PostImages.QuadImage.FileName.ToString().Remove(0,1));"></div>
+    </div>
+  
+         
         
-         <img src="@image" alt="@post.Title"/>
+         
           
-   </div>
+   
 
-   }
-   </div>
+    
+   
 }
-<script type="text/javascript">
-var imageLink = $(".blogpost img").attr("src");
-    $(".blogpost img").attr("src", imageLink.substring(1,imageLink.length));
-</script>
+
