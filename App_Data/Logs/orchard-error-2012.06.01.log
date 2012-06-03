@@ -1,0 +1,22 @@
+2012-06-01 14:24:59,602 [27] Orchard.Exceptions.DefaultExceptionPolicy - An unexpected exception was caught
+System.ArgumentException: The relative virtual path 'Orchard.Core.Shapes.CoreShapes::Zone' is not allowed here.
+   at System.Web.VirtualPath.FailIfRelativePath()
+   at System.Web.Hosting.HostingEnvironment.MapPathActual(VirtualPath virtualPath, Boolean permitNull)
+   at System.Web.Hosting.HostingEnvironment.MapPathInternal(VirtualPath virtualPath)
+   at System.Web.Hosting.MapPathBasedVirtualPathProvider.CacheLookupOrInsert(String virtualPath, Boolean isFile)
+   at System.Web.Hosting.MapPathBasedVirtualPathProvider.FileExists(String virtualPath)
+   at Orchard.FileSystems.Dependencies.WebFormVirtualPathProvider.FileExists(String virtualPath) in d:\Builds\OrchardFull\src\Orchard\FileSystems\Dependencies\WebFormsExtensionsVirtualPathProvider.cs:line 44
+   at System.Web.Hosting.VirtualPathProvider.FileExists(String virtualPath)
+   at Orchard.FileSystems.VirtualPath.DefaultVirtualPathProvider.FileExists(String virtualPath) in d:\Builds\OrchardFull\src\Orchard\FileSystems\VirtualPath\DefaultVirtualPathProvider.cs:line 149
+   at Orchard.FileSystems.WebSite.WebSiteFolder.FileExists(String virtualPath) in d:\Builds\OrchardFull\src\Orchard\FileSystems\WebSite\WebSiteFolder.cs:line 38
+   at Orchard.DesignerTools.Controllers.AlternateController.Create(String template, String alternate, String returnUrl)
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)

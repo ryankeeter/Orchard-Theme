@@ -1,0 +1,8 @@
+﻿@model Contrib.HtmlField.ViewModels.HtmlEditorViewModel
+@using Orchard.Core.Common.ViewModels;
+@using Orchard.Utility.Extensions;
+<fieldset>
+    <label>@Model.HtmlField.Name.CamelFriendly()</label>
+    @Display.Body_Editor(Model)
+    @Html.ValidationMessageFor(m => m.Text)
+</fieldset>

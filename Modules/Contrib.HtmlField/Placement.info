@@ -1,0 +1,16 @@
+﻿<Placement>
+	<Place Fields_Contrib_Html_Edit="Content:2.5"/>
+
+	<Match DisplayType="SummaryAdmin">
+		<Place Fields_Contrib_Html="-"/>
+		<Place Fields_Contrib_Html_Summary="-"/>
+	</Match>
+
+	<Match DisplayType="Summary">
+		<Place Fields_Contrib_Html_Summary="Content:5"/>
+	</Match>
+
+	<Match DisplayType="Detail">
+		<Place Fields_Contrib_Html="Content:5"/>
+	</Match>
+</Placement>

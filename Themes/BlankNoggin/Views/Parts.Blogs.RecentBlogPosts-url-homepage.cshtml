@@ -1,5 +1,7 @@
-﻿@using Orchard.ContentManagement;
+﻿
+@using Orchard.ContentManagement;
 @using Orchard.Blogs.Models;
+@using Orchard.Autoroute.Models;
 
 @{
   IEnumerable<object> blogPosts = Model.ContentItems.ContentItems;
@@ -20,7 +22,27 @@ else
         </div>
     </div>
    
-    <div id="firstPost" class="span-18 last" style="background-image: url(@posts[0].ContentItem.PostImages.FeaturedImage.FileName.ToString().Remove(0,1));"></div>
+    var post = ((IContent)posts[0].ContentItem).As<BlogPostPart>();
+    var route = ((IContent)posts[0].ContentItem).As<AutoroutePart>();
+    <div id="firstPost" class="span-18 last" style="background-image: url(@posts[0].ContentItem.PostImages.FeaturedImage.FileName.ToString().Remove(0,1));">
+        <a href="@route.Path">
+           <div id="firstPostContent" class="hoverMessage span-18 last" style="display:none;">
+               <div id="innerQuadImage" class="span-6">
+                 <img src="@posts[0].ContentItem.PostImages.QuadImage.FileName.ToString().Remove(0,1)" alt="@post.Title"/>
+               </div>
+               <div id="innerRightContent">
+                   <h1>@post.Title</h1>
+                   @foreach(var field in post.Fields){
+                    ObjectInfo.Print(field);
+                   }
+                  
+                   
+               </div>
+            
+           
+            </div>
+        </a>
+    </div>
     <div id="secondPost" class="span-12" style="background-image: url(@posts[1].ContentItem.PostImages.SecondaryImage.FileName.ToString().Remove(0,1));"></div>
     <div id="quadRight"  class="span-12 last">
         <div id="quad1" class="span-6" style="background-image: url(@posts[2].ContentItem.PostImages.QuadImage.FileName.ToString().Remove(0,1));"></div>

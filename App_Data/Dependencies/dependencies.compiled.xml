@@ -13,10 +13,22 @@
     <Hash>91b642f87943ae6d</Hash>
   </Dependency>
   <Dependency>
+    <ExtensionId>Contrib.HtmlField</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Contrib.HtmlField/Contrib.HtmlField.csproj</VirtualPath>
+    <Hash>b5111c73a78303ec</Hash>
+  </Dependency>
+  <Dependency>
     <ExtensionId>Contrib.ImageField</ExtensionId>
     <LoaderName>DynamicExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Contrib.ImageField/Contrib.ImageField.csproj</VirtualPath>
     <Hash>6365fc4b09ca0ef1</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>Contrib.Taxonomies</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Contrib.Taxonomies/Contrib.Taxonomies.csproj</VirtualPath>
+    <Hash>6aa353defbdc2f53</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>Dark</ExtensionId>
@@ -65,6 +77,12 @@
     <LoaderName>DynamicExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Orchard.DesignerTools/Orchard.DesignerTools.csproj</VirtualPath>
     <Hash>bf247acc960e8458</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>Orchard.Experimental</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Orchard.Experimental/Orchard.Experimental.csproj</VirtualPath>
+    <Hash>420c45e564a133ab</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>Orchard.Fields</ExtensionId>

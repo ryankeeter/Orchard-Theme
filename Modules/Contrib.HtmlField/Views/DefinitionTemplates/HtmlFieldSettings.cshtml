@@ -1,0 +1,7 @@
+﻿@model Contrib.HtmlField.Settings.HtmlFieldSettings
+
+<fieldset>
+    <label for="@Html.FieldIdFor(m => m.FlavorDefault)">@T("Default flavor")</label>
+    @Html.EditorFor(m => m.FlavorDefault)
+    @Html.ValidationMessageFor(m => m.FlavorDefault)
+</fieldset>

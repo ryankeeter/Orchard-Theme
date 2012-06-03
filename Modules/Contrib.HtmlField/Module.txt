@@ -1,0 +1,13 @@
+Name: Html Field
+AntiForgery: enabled
+Author: John Murdoch
+Website: http://orchardhtmlfield.codeplex.com/
+Version: 1.3
+OrchardVersion: 1.3
+Description: The Html Field module introduces a new field with Html capabilities 
+Features:
+    Contrib.HtmlField:
+		Name: Html Field
+        Description: The Html field.
+		Category: Fields
+        Dependencies: Settings
