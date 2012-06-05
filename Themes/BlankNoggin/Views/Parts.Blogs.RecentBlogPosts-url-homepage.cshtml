@@ -2,6 +2,7 @@
 @using Orchard.ContentManagement;
 @using Orchard.Blogs.Models;
 @using Orchard.Autoroute.Models;
+@using System.Globalization;
 
 @{
   IEnumerable<object> blogPosts = Model.ContentItems.ContentItems;
@@ -24,28 +25,48 @@ else
    
     var post = ((IContent)posts[0].ContentItem).As<BlogPostPart>();
     var route = ((IContent)posts[0].ContentItem).As<AutoroutePart>();
-    <div id="firstPost" class="span-18 last" style="background-image: url(@posts[0].ContentItem.PostImages.FeaturedImage.FileName.ToString().Remove(0,1));">
-        <a href="@route.Path">
+   
+    <div id="firstPost" class="span-18 last" style="background-image: url(@posts[0].ContentItem.PostImages.FeaturedImage.FileName.ToString().Remove(0,1));">       
            <div id="firstPostContent" class="hoverMessage span-18 last" style="display:none;">
-               <div id="innerQuadImage" class="span-6">
-                 <img src="@posts[0].ContentItem.PostImages.QuadImage.FileName.ToString().Remove(0,1)" alt="@post.Title"/>
+               <div id="leftColor" class="span-1"></div> 
+               <div id="innerRightContent" class="span-10">
+                   <a href="@route.Path"><h1>@post.Title</h1></a>
+                   <h4>PUBLISHED: @DateTime.ParseExact(@post.PublishedUtc.ToString(), "G", CultureInfo.GetCultureInfo("en-US")).ToString("yyyy-MM-dd")</h4>
+                   <p>@posts[0].ContentItem.Summary.Summary.Value</p>
                </div>
-               <div id="innerRightContent">
-                   <h1>@post.Title</h1>
-                   @foreach(var field in post.Fields){
-                    ObjectInfo.Print(field);
-                   }
-                  
-                   
-               </div>
-            
-           
+               <div id="innerQuadImage" class="span-7 last">               
+                 <a href="@route.Path"><img src="@posts[0].ContentItem.PostImages.QuadImage.FileName.ToString().Remove(0,1)" alt="@post.Title"/></a>                    
+               </div>          
             </div>
-        </a>
+        </div>
+    var post2 = ((IContent)posts[1].ContentItem).As<BlogPostPart>();
+    var route2 = ((IContent)posts[1].ContentItem).As<AutoroutePart>();
+    var post3 = ((IContent)posts[2].ContentItem).As<BlogPostPart>();
+    var route3 = ((IContent)posts[2].ContentItem).As<AutoroutePart>();
+    var post4 = ((IContent)posts[3].ContentItem).As<BlogPostPart>();
+    var route4 = ((IContent)posts[3].ContentItem).As<AutoroutePart>();
+    <div id="secondPost" class="span-12" style="background-image: url(@posts[1].ContentItem.PostImages.SecondaryImage.FileName.ToString().Remove(0,1));">
+         <div id="secondPostContent" class="span-12 last hoverMessage" style="display:none;">
+            <div id="secondaryLeftColor" class="span-1"></div>
+             <div id="secondaryInnerRightContent" class="span-10 last">
+                <a href="@route2.Path"><h1>@post2.Title</h1></a>
+                 <h4>PUBLISHED: @DateTime.ParseExact(@post.PublishedUtc.ToString(), "G", CultureInfo.GetCultureInfo("en-US")).ToString("yyyy-MM-dd")</h4>
+                   
+             </div>
+              <div class="span-10 last">
+                 <p>@posts[1].ContentItem.Summary.Summary.Value</p>
+              </div>
+             <div class="span-10 last">
+                <a href="@route2.Path"><img src="/media/default/arrowright.png" alt="@post2.Title" style="float:right;"/></a>
+             </div>
+         </div>
     </div>
-    <div id="secondPost" class="span-12" style="background-image: url(@posts[1].ContentItem.PostImages.SecondaryImage.FileName.ToString().Remove(0,1));"></div>
     <div id="quadRight"  class="span-12 last">
-        <div id="quad1" class="span-6" style="background-image: url(@posts[2].ContentItem.PostImages.QuadImage.FileName.ToString().Remove(0,1));"></div>
+    
+        
+        <div id="quad1" class="span-6" style="background-image: url(@posts[2].ContentItem.PostImages.QuadImage.FileName.ToString().Remove(0,1));">
+            <a href="@route3.Path"></a>
+        </div>
         <div id="quad2" class="span-6 last" style="background-image: url(@posts[3].ContentItem.PostImages.QuadImage.FileName.ToString().Remove(0,1));"></div>
         <div id="quad3" class="span-6" style="background-image: url(@posts[4].ContentItem.PostImages.QuadImage.FileName.ToString().Remove(0,1));"></div>
         <div id="quad4" class="span-6 last" style="background-image: url(@posts[5].ContentItem.PostImages.QuadImage.FileName.ToString().Remove(0,1));"></div>

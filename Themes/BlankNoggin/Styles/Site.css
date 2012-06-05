@@ -48,12 +48,22 @@ Body {
     height: 750px;
 }
     #mainContent .hoverMessage{
-        background-color: white;
-        height:290px;
+        background-color: #f4f4f4;
+        
     }
     #mainContent .hoverMessage h1{
        font-family: 'Lato', sans-serif;
        font-size: 30px;
+    }
+     #mainContent .hoverMessage p{
+       font-family: 'Lato', sans-serif;
+       font-size: 18px;
+       color:#808080;
+    }
+     #mainContent .hoverMessage h4{
+       font-family: 'Lato', sans-serif;
+       font-size: 16px;
+       color:#808080;
     }
     #mainContent div{
         background-repeat: no-repeat;
@@ -71,19 +81,62 @@ Body {
         #firstPost #firstPostContent{
             position:relative;
         } 
+        #firstPost #firstPostContent .hoverMessage{
+            height:290px;
+        }
+        #firstPost #firstPostContent #leftColor{
+            width:25px;
+            height:290px;
+            background-color:#00afdb;
+        }
+        #firstPost #firstPostContent #innerQuadImage {
+
+          height:290px;
+   
+        }
+            #firstPost #firstPostContent #innerQuadImage img{
+                float:right;
+                padding-right:15px;
+                padding-top:25px;
+            }
+        #firstPost #firstPostContent a{
+            color:#565656;
+            text-decoration:none;
+        }
+        
     #secondPost {
         height: 400px;
-        margin-top:10px;
-       
-        
+        margin-top:10px;   
     }
+        #secondPost #secondPostContent{
+            position:relative;
+            height:390px;
+        }
+        #secondPost #secondPostContent .hoverMessage{
+            position:relative;
+            height:390px;
+        }
+        #secondPost #secondPostContent #secondaryLeftColor{
+            width:20px; height:390px;
+            background-color: #00afdb;
+        }
+        #secondPost #secondPostContent a{
+            text-decoration: none;
+            color:#565656;
+        }
     #quadRight{
         padding-top:10px;
         }
         #quadRight #quad1 {
             height: 200px;
-
-            
+   
+        }
+        #quadRight #quad1 a{
+            position:absolute;
+            top: 0;
+            left: 0;
+            width:240px;
+            height: 200px;
         }
         #quadRight #quad2 {
             height: 200px;
