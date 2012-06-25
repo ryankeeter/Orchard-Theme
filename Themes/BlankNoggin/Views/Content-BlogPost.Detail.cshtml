@@ -1,0 +1,87 @@
+﻿@using Orchard.Utility.Extensions;
+@using Orchard.ContentManagement;
+@using Orchard.Blogs.Models;
+@using Orchard.Autoroute.Models;
+@using System.Globalization;
+@{
+	Layout.Title = Model.Title;
+	var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
+    var post = ((IContent)Model.ContentItem).As<BlogPostPart>();
+}
+<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeRDark.css" rel="stylesheet" type="text/css" />
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js" type="text/javascript"></script>
+
+@if(Model.ContentItem.Videos.YouTubeLink.Value != null)
+{
+         <div class="span-24 last" id="vimeoArea">
+             <iframe src="http://player.vimeo.com/video/@Model.ContentItem.Videos.YouTubeLink.Value" width="950" height="534" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+        <div class="span-24 last" id="titleSection">
+            <div id="postTitle" class="span-14">
+                <h1>@post.Title</h1>
+                <h4>@Display(Model.Meta)</h4>   
+                <div id="postBody">
+                    <p style="padding-left: 20px;">
+                     @Html.Raw(post.Text)
+                    </p>
+                   
+                </div>      
+            </div>
+            <div id="authorInfo" class="span-10 last">
+                <div id="authorBio" class="span-5">
+                    <h4>About the Author</h4>
+                    <p>Ryan Keeter is a former Iraq and Afghanistan inhabitant who is currently an aspiring lawyer, budding 
+                    inventor, .NET developer, and father, husband, and he who watches the baseball (go Cardinals!)</p>
+                </div>
+                <div id="span-3 last">
+                    <img src="Media/Default/profile.jpg" alt="Ryan Keeter Profile Picture"></img>
+                </div>
+            </div>
+        
+         </div>
+            <div class="span-24 last" id="comments">
+                <h3>Comments</h3>
+                <script type="text/javascript" src="http://ryankeeter.disqus.com/combination_widget.js?num_items=5&hide_mods=0&color=custom&default_tab=people&excerpt_length=200"></script>
+            </div>
+       
+}
+@if(Model.ContentItem.Videos.YouTubeLink.Value == null)
+{
+    <div id="leftAside" class="span-6">
+        <div id="categories-link">
+            <a href="/categories" id="categories-anchor-tag"></a>
+        </div>
+        <div id="home-link">
+            <a href="/" id="favorites-anchor-tag"></a>
+        </div>
+    </div>
+   
+    <div id="firstPost" class="span-18 last" style="background-image: url(@Model.ContentItem.PostImages.FeaturedImage.FileName.ToString().Remove(0,1));">   
+        </div>    
+<div class="span-24 last" id="titleSection">
+            <div id="postTitle" class="span-14">
+                <h1>@post.Title</h1>
+                <h4>@Display(Model.Meta)</h4>                       
+            </div>
+           <div id="postBodyArea" class="span-24">
+              @Html.Raw(post.Text)            
+           </div>
+              <div id="authorInfo" class="span-10 last">
+                    <div id="authorBio" class="span-5">
+                        <h4>About the Author</h4>
+                        <p>Ryan Keeter is a former Iraq and Afghanistan inhabitant who is currently an aspiring lawyer, budding 
+                        inventor, .NET developer, and father, husband, and he who watches the baseball (go Cardinals!)</p>
+                    </div>
+                    <div id="span-3 last">
+                        <img src="Media/Default/profile.jpg" alt="Ryan Keeter Profile Picture"></img>
+                    </div>
+                </div>
+             </div>
+            <div class="span-24 last" id="comments">
+                <h3>Comments</h3>
+                <script type="text/javascript" src="http://ryankeeter.disqus.com/combination_widget.js?num_items=5&hide_mods=0&color=custom&default_tab=people&excerpt_length=200"></script>
+            </div>
+}
+
+

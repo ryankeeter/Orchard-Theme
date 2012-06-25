@@ -1,0 +1,471 @@
+2012-06-25 04:55:53,148 [29] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClassd.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape>b__c(ContentPart part, TField field) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 33
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 87
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 88
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape(BuildEditorContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 32
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassc.<BuildEditor>b__b(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 62
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 04:59:19,958 [5] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 04:59:40,484 [26] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, Object shapeHelper)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, IUpdateModel updater, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass13.<Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape>b__12(ContentPart part, TField field) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 46
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 87
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 88
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape(UpdateEditorContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 45
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassf.<UpdateEditor>b__e(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 70
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 04:59:40,805 [36] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClassd.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape>b__c(ContentPart part, TField field) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 33
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 87
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 88
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape(BuildEditorContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 32
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassc.<BuildEditor>b__b(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 62
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 04:59:44,889 [43] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:00:51,114 [23] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:03:38,321 [44] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:04:08,608 [11] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:05:35,091 [42] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:08:35,695 [29] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:14:06,668 [7] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, Object shapeHelper)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, IUpdateModel updater, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass13.<Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape>b__12(ContentPart part, TField field) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 46
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 87
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 88
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape(UpdateEditorContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 45
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassf.<UpdateEditor>b__e(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 70
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:14:07,004 [29] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClassd.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape>b__c(ContentPart part, TField field) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 33
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 87
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 88
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape(BuildEditorContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 32
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassc.<BuildEditor>b__b(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 62
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:14:10,663 [36] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:16:41,856 [27] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:16:57,841 [27] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:17:09,256 [26] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:17:18,094 [42] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:18:14,330 [35] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, Object shapeHelper)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, IUpdateModel updater, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass13.<Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape>b__12(ContentPart part, TField field) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 46
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 87
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 88
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape(UpdateEditorContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 45
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassf.<UpdateEditor>b__e(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 70
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:18:14,557 [7] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClassd.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape>b__c(ContentPart part, TField field) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 33
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 87
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 88
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape(BuildEditorContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 32
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassc.<BuildEditor>b__b(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 62
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:18:21,192 [29] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:19:15,391 [23] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:19:33,834 [27] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:22:56,640 [41] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, Object shapeHelper)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, IUpdateModel updater, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass13.<Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape>b__12(ContentPart part, TField field) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 46
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 87
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 88
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape(UpdateEditorContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 45
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassf.<UpdateEditor>b__e(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 70
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:22:56,865 [39] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClassd.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape>b__c(ContentPart part, TField field) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 33
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 87
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 88
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape(BuildEditorContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 32
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassc.<BuildEditor>b__b(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 62
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:23:00,388 [11] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:27:37,943 [43] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:29:11,047 [27] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:31:42,153 [23] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:32:14,409 [43] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:34:08,998 [35] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, Object shapeHelper)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, IUpdateModel updater, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass13.<Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape>b__12(ContentPart part, TField field) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 46
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 87
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 88
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape(UpdateEditorContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 45
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassf.<UpdateEditor>b__e(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 70
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:34:09,244 [41] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.Editor(ContentPart part, TaxonomyField field, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClassd.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape>b__c(ContentPart part, TField field) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 33
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 87
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 88
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape(BuildEditorContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 32
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassc.<BuildEditor>b__b(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 62
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:34:14,776 [29] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:34:50,891 [36] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:36:27,918 [29] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:37:40,153 [27] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:38:06,120 [36] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in d:\Builds\OrchardFull\src\Orchard\InvokeExtensions.cs:line 19
+2012-06-25 05:38:23,537 [23] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by Contrib.Taxonomies.Drivers.TaxonomyFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: name
+   at Contrib.Taxonomies.Services.TaxonomyService.GetTaxonomyByName(String name)
+   at Contrib.Taxonomies.Drivers.TaxonomyFieldDriver.<>c__DisplayClass3.<Display>b__2()
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass36.<ContentShape>b__35(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 123
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass3f.<ContentShapeImplementation>b__3e(BuildShapeContext ctx) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 135
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 28
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in d:\Builds\OrchardFull\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeEx
